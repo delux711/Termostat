@@ -1,0 +1,12 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\1wire.o"
+".\objects\temp_ds18b20.o"
+".\objects\delay.o"
+".\objects\i2c_test.o"
+".\objects\startup_stm32f10x_md.o"
+".\objects\system_stm32f10x.o"
+--strict --scatter ".\Objects\emptyProjectStm32F103C8.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\emptyProjectStm32F103C8.map" -o .\Objects\emptyProjectStm32F103C8.axf
